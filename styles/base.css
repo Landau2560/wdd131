@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto' sans-serif;
+    background-color: #79c7c5;
+    color:#000501 ;
+}
+
+header {
+    background-color: #79c7c5;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+#course-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3 ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom:-3px;
+    background-color: #79c7c5;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #73ab84;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    background-color: #99d19c;
+    border-radius: 8px;
+}
+
+.card {
+    background-color: #79c7c5;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #79c7c5;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+@media (min-width:700px) {
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}

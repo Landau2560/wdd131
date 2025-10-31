@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Landau Grandberry</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Landau Grandberry, Home page for projects." />
+    <meta name="author" content="Landau Grandberry" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>wdd131 - Landau</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://linkedin.com" target="_blank">linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/6?lang=eng"
+                        target="_blank">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Landau Grandberry</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/Landauwithfamily.jpg" alt="Photo of Landau With his family">
+            <p>Hello, Im Landau Grandberry. I am a web development student learning HTML, CSS, and JavaScript through
+                WDD 131. I enjoy taking trips with my family,cooking and collecting sports cards.</p>
+        </section>
+
+        <section class="card">
+            <h2>Arizona, USA</h2>
+            <img src="images/USA flag.jpg" atl="United States of America">
+            <p>I was born and raised in California. In 2017 I moved to Tempe, AZ with my little brother.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Landau Grandberry | United States</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
