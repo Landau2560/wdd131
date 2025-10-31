@@ -3,16 +3,17 @@
 body {
     margin: 0;
     font-family: 'Roboto' sans-serif;
+    font-size: larger;
     background-color: #79c7c5;
-    color:#000501 ;
+    color: white;
 }
 
 header {
     background-color: #79c7c5;
     color: white;
-    width: 100%;
     padding: 1rem;
     text-align: center;
+    width: 100%;
 }
 
 
@@ -40,18 +41,6 @@ nav a {
     transition: all 0.3 ease;
 }
 
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 50%;
-    bottom:-3px;
-    background-color: #79c7c5;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-
 nav a:hover {
     text-decoration: underline;
     color: #73ab84;
@@ -72,6 +61,9 @@ main {
     background-color: #79c7c5;
     border-radius: 8px;
     padding: 1rem;
+    text-align: center;
+    font-family: 'Roboto' sans-serif;
+
 }
 
 .card img {
@@ -93,7 +85,7 @@ footer p {
 }
 
 @media (min-width:700px) {
-    main{
+    main {
         grid-template-columns: 1fr 1fr;
     }
 }
