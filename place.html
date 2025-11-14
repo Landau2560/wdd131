@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States of America - Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>United States of America</h1>
+</header>
+<main>
+
+    <img src="images/USAflag.webp" alt="USA Flag" class="hero">
+        
+
+    <section class="info-grid">
+
+        <div class="card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Capital:</strong> Washington DC</li>
+                <li><strong>Population:</strong>347.9 Million</li>
+                <li><strong>Currency:</strong>USD ($)</li>
+                <li><strong>Language:</strong>English</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Weather 🌤️</h2>
+            <p><strong>Temperature:</strong> <span id="temp">48</span> ℉</p>
+            <p><strong>Wind Speed:</strong> <span id="wind">5</span> mph</p>
+            <p><strong>Wind Chill:</strong> <span id="chill"></span></p>
+        </div>
+        
+    </section>
+</main>
+<footer>
+    <p>© 2025 | Last Modified: <span id="lastModified"></span></p>
+</footer>
+  
+<script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+</script>
+
+
+
+</body>
+
+</html>
