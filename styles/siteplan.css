@@ -1,0 +1,46 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #f1faee;
+    color: #333333;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #1d3557;
+    border-bottom: 4px solid #e63946;
+    padding-bottom: 0.3rem;
+}
+
+.color-sample {
+    width: 140px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    margin-bottom: 1rem;
+}
+
+.color-sample.primary {
+    background: #e63946;
+}
+
+.color-sample.secondary {
+    background: #1d3557;
+}
+
+.color-sample.accent {
+    background: #ffb703;
+}
+
+.color-sample.background {
+    background: #f1faee;
+}
+
+.wireframes img {
+    width: 260px;
+    border: 2px solid #dddddd;
+    margin: 1rem 1rem 1rem 0;
+}
