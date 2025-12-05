@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Progress - CourtVision Basketball</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<header>
+    <div class="logo-title">
+        <img src="images/basketball_1053926.png" alt="CourtVision Logo" class="logo">
+        <h1>Progress Tracker - CourtVision Basketball</h1>
+    </div>
+    
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="training.html">Training</a>
+        <a href="progress.html">Progress</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Log your Daily Basketball Work</h2>
+
+    <form id="progressForm">
+        <label for="shots">How many shots did you shoot today?</label>
+        <input type="number" id="shots" required>
+
+        <label for="drills">How many drills did you do this week?</label>
+        <input type="number" id="drills" required>
+
+        <label for="minutes-training">How many minutes did you train today?</label>
+        <input type="number" id="minutes-training" name="minutesTraining" min="0">
+
+        <label for="free-throws">How many free throws did you make today?</label>
+        <input type="number" id="free-throws" name="freeThrows" min="0">
+
+        <label for="three-point">How many 3 point attempts did you take today?</label>
+        <input type="number" id="three-point" name="threePoint" min="0">
+
+        <label for="ball-handling"> How many minutes did you spend on ball handling drills?</label>
+        <input type="number" id="ball-handling" name="ballHandling" min="0">
+
+        <label for="strength">How many strength and conditioning reps did you do this week?</label>
+        <input type="number" id="strength" name="strength" min="0">
+
+        <label for="weekly-goal">Did you complete your weekly basketball goals?</label>
+        <select id="weekly-goal" name="weeklyGoal">
+            <option value="">--Choose One--</option>
+            <option value="yes">Yes</option>
+            <option value="no">Not yet</option>
+        </select>
+
+        <button type="submit">Save Progress</button>
+    </form>
+    <section id="results"></section>
+</main>
+
+<footer>
+    <p>&copy; 2025 CourtVision Basketball</p>
+    <p><span id="year"></span> Last modified: <span id="lastModified"></span></p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
